@@ -27,7 +27,6 @@ public class Categoria implements Serializable{
 
 	
 	@OneToMany(mappedBy = "categoria")
-	@JoinColumn(name = "categoria_id")
 	private List<Livro> livros = new ArrayList<>();
 
 	public Categoria() {
